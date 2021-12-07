@@ -7,7 +7,6 @@ input_file.close()
 
 # part 1
 
-
 def num_increase(list_input):
     x = int(list_input[0])  # set x to first item on list
     z = 0  # num of increases
@@ -17,20 +16,16 @@ def num_increase(list_input):
         x = int(i)    # reset x to current item
     print(z)
 
-
 num_increase(content_list)
-
 
 # part 2
 
 second_list = []
-
 window_size = 3
 
 for i in range(len(content_list) - window_size + 1):
     t = content_list[i: i + window_size]
     tt = sum(map(int, t))
     second_list.append(tt)
-
 
 num_increase(second_list)
