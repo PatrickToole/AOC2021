@@ -1,10 +1,6 @@
-# read file
-input_file = open('input_data\\2021-2a.txt', 'r')
-content = input_file.read()
+from reader import read_file
 
-content_list = content.split('\n')
-input_file.close()
-
+read_file('day2')
 
 # part 1
 
@@ -24,7 +20,7 @@ def part_1(input):
     print(result)
 
 
-part_1(content_list)
+part_1(read_file.content_list)
 
 # part 2
 
@@ -49,4 +45,4 @@ def part_2(input):
     print(result)
 
 
-part_2(content_list)
+part_2(read_file.content_list)
